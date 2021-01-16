@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="cell">
+    <div class="cell-container">
+        <span class="cell-new">NEW</span>
+        <div class="cell-photo">
+            <img class="main-photo" src="img/image_23_copy.jpg" alt="photo">
+            <img class="second-photo" src="img/image_23_hover.jpg" alt="photo">
+        </div>
+        <img class="vector" src="img/Vector.png" alt="vector">
+    </div>
+    <div class="product-text">
+        <h2 class="product-name">Шампунь</h2>
+        <h3 class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </h3>
+    </div>
+    <div class="options-top">
+        <div class="dropdown">
+            <span id="selected">Цвет</span>
+            <ul class="dropdown-items">
+                <li class="dropdown-item" data-color="Жёлтый">Жёлтый</li>
+                <li class="dropdown-item" data-color="Красный">Красный</li>
+                <li class="dropdown-item" data-color="Синий">Синий</li>
+            </ul>
+        </div>
+        <div class="price-container">
+            <span class="price" data-basic="200">200 грн</span>
+        </div>
+    </div>
+    <div class="radio-items">
+        <div class="radio-item">
+            <input type="radio" id="ritema" name="ritem" value="ropt1" data-factor="1" checked>
+            <label for="ritema">100 мл</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="ritemb" name="ritem" value="ropt2" data-factor="2">
+            <label for="ritemb">200 мл</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="ritemc" name="ritem" value="ropt3" data-factor="3">
+            <label for="ritemc">300 мл</label>
+        </div>
+    </div>
+    <div class="container-buy">
+        <div class="counter-container">
+            <button class="btn-counter" data-operation="minus">-</button>
+            <label>
+                <input class="count-number" id="counter" type="text" value="1" readonly>
+            </label>
+            <button class="btn-counter" data-operation="plus">+</button>
+        </div>
+        <div>
+            <button class="btn-buy">Купить</button>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

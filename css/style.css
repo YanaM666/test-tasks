@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    outline: none;
+}
+.cell {
+    width: 573px;
+    background: #F8FAFC;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 45px rgba(0, 0, 0, 0);
+    padding: 43px 30px 37px 31px;
+    transition: 0.5s all;
+}
+.cell:hover {
+    border: 1px solid #F3F3F3;
+    box-shadow: 0 4px 45px #C3D4E4;
+}
+.cell-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+.cell-new {
+    font-family: 'SF UI Display', serif;
+    font-size: 14px;
+    background: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    color: #FFFFFF;
+    padding: 4px 20px 5px 20px;
+}
+.cell-photo {
+    width: 256px;
+    height: 261px;
+}
+.cell-photo .main-photo {
+    display: block;
+}
+.cell-photo .second-photo {
+    display: none;
+}
+.cell-photo:hover .main-photo {
+    display: none;
+}
+.cell-photo:hover .second-photo {
+    display: block;
+}
+.vector {
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 14px;
+}
+.product-text {
+    margin-top: 25px;
+}
+.product-name {
+    font-family: 'SF UI Display', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2C2C2C;
+}
+.product-description {
+    font-family: 'SF UI Display', serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C2C;
+    font-weight: 400;
+    margin: 10px 15px 0;
+}
+.options-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 15px 0;
+}
+.dropdown:after {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 12px;
+    top: 13px;
+}
+.dropdown.active:after {
+    transform: rotate(135deg);
+}
+.dropdown.active .dropdown-items {
+    display: block;
+}
+.dropdown {
+    position: relative;
+    width: 258px;
+    padding: 8px 50px 0 25px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 9;
+}
+#selected {
+    font-family: 'SF UI Display', serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+.dropdown-items {
+    display: none;
+    width: 333px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    z-index: 2;
+    max-height: 90px;
+    overflow-y: auto;
+    margin-left: -25px;
+    position: absolute;
+}
+.dropdown-item {
+    padding: 5px 0 5px 20px;
+    font-family: 'SF UI Display', serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+.dropdown-item:hover {
+    background: #F3F8FC;
+    border-radius: 0 10px 10px 0;
+}
+.price {
+    font-family: 'SF UI Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.radio-items {
+    display: flex;
+    flex-direction: column;
+    margin:15px 0 0 37px;
+}
+.radio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+    display: none;
+}
+
+.radio-item label {
+    color: #000000;
+    font-weight: 600;
+}
+
+.radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid #DEDEDE;
+    background-color: #DEDEDE;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+    border-radius: 7px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    content: " ";
+    display: block;
+    background: #EFBB37;
+}
+.container-buy {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0 0 31px;
+}
+.counter-container {
+    width: 92px;
+    height: 39px;
+    background: #E2E9F0;
+    border-radius: 30px;
+}
+.counter-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.count-number {
+    width: 25px;
+    border-color: transparent;
+    background-color: #e1eaf0;
+    padding-top: 10px;
+    text-align: center;
+}
+.btn-counter {
+    border-color: transparent;
+    background-color: #e1ebf0;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.btn-buy {
+    width: 302px;
+    height: 39px;
+    background: linear-gradient(261.65deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+    border-radius: 30px;
+    font-family: 'SF UI Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-color: transparent;
+    margin-left: 40px;
+    transition: 0.3s all;
+}
+.btn-buy:hover  {
+    background: linear-gradient(261.65deg, #E9B32C -3.95%, #BF911A 109.44%);
+    color: #ffffff;
+    box-shadow: 0 0 20px #E8CB80;
+}
+.btn-buy:active {
+    background: linear-gradient(261.65deg, #FFD773 -3.95%, #E2B645 109.44%);
+    box-shadow: 0 0 20px #E8CB80;
+}
